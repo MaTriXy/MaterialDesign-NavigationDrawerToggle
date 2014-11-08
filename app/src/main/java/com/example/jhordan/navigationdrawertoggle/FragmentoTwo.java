@@ -2,6 +2,7 @@ package com.example.jhordan.navigationdrawertoggle;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,8 @@ public class FragmentoTwo extends Fragment {
         FragmentoTwo fragmentCercanos = new FragmentoTwo();
         Bundle extraArguments = new Bundle();
 
+        String h = Integer.toString(position);
+        Log.i("position", h);
         fragmentCercanos.setArguments(extraArguments);
         return fragmentCercanos;
     }

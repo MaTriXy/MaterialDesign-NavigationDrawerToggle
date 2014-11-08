@@ -2,6 +2,7 @@ package com.example.jhordan.navigationdrawertoggle;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,20 @@ public class FragmentoOne extends Fragment {
 
         fragmentCercanos.setArguments(extraArguments);
         return fragmentCercanos;
+    }
+    private Toolbar toolbar;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // needed to indicate that the fragment would
+        // like to add items to the Options Menu
+        setHasOptionsMenu(true);
+        // update the actionbar to show the up carat/affordance
+
+
+
+
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
