@@ -78,6 +78,8 @@ public class ListViewItemAdapter extends BaseAdapter {
 
                 final TextView contentTitle = (TextView) container.findViewById(R.id.content_title);
                 contentTitle.setText(itemContentSection.getContentTitleFromResources());
+                contentTitle.setTextColor(itemContentSection.getTextColor());
+                container.setBackgroundColor(itemContentSection.getBackgroundContentSection());
             }
         }
 

@@ -73,7 +73,7 @@ public class NavigationDrawerFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         listViewItems = new ArrayList<ListViewItemInterface>();
-        listViewItems.add(new ItemContentSection(0, getResources().getColor(R.color.accent), R.string.title_section1));
+        listViewItems.add(new ItemContentSection(0, getResources().getColor(R.color.white),getResources().getColor(R.color.accent), R.string.title_section1));
         listViewItems.add(new ItemContentSection(0, getResources().getColor(R.color.accent), R.string.title_section2));
         listViewItems.add(new ItemContentSection(0, getResources().getColor(R.color.accent), R.string.title_section3));
         // Read in the flag indicating whether or not the user has demonstrated awareness of the
